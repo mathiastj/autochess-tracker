@@ -43,7 +43,6 @@ class MmrChart extends Component {
             contentStyle={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
             labelStyle={{ fontWeight: "bold", color: "#666666" }}
           />
-          {/* <CartesianGrid stroke="#f5f5f5" /> */}
           <Line
             type="monotone"
             dataKey="newScore"
