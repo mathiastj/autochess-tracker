@@ -18,9 +18,9 @@ class MmrChart extends Component {
 
     const fixData = dataPoints => {
       for (const point of dataPoints) {
-        point.timeFetched = new Date(point.timeFetched).toLocaleString();
+        point.fetchedat = new Date(point.fetchedat).toLocaleString();
       }
-      return dataPoints.reverse();
+      return dataPoints;
     };
 
     const data = fixData(dataPoints);
@@ -33,8 +33,8 @@ class MmrChart extends Component {
           data={data}
           margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
         >
-          <XAxis dataKey="timeFetched" />
-          <YAxis dataKey="newScore" domain={["auto", "auto"]} />
+          <XAxis dataKey="fetchedat" />
+          <YAxis dataKey="mmr" domain={["auto", "auto"]} />
           <Tooltip
             wrapperStyle={{
               borderColor: "white",
@@ -43,12 +43,7 @@ class MmrChart extends Component {
             contentStyle={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
             labelStyle={{ fontWeight: "bold", color: "#666666" }}
           />
-          <Line
-            type="monotone"
-            dataKey="newScore"
-            stroke="#ff7300"
-            yAxisId={0}
-          />
+          <Line type="monotone" dataKey="mmr" stroke="#ff7300" yAxisId={0} />
         </LineChart>
       </ResponsiveContainer>
     );
