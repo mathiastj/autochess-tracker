@@ -8,7 +8,7 @@ class App extends Component {
   state = {};
 
   async componentDidMount() {
-    const res = await axios.get("/stats");
+    const res = await axios.get("https://warm-taiga-16419.herokuapp.com/stats");
 
     this.setState({ stats: res.data });
   }
