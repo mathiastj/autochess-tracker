@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "436c4b0492fc8d182c72",
+    "revision": "66c59f851d41e6a83698",
     "url": "/autochess-tracker/static/css/main.5d3c1d90.chunk.css"
   },
   {
-    "revision": "436c4b0492fc8d182c72",
-    "url": "/autochess-tracker/static/js/main.436c4b04.chunk.js"
+    "revision": "66c59f851d41e6a83698",
+    "url": "/autochess-tracker/static/js/main.66c59f85.chunk.js"
   },
   {
     "revision": "e8ee5bcb2f7be7f1515f",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/autochess-tracker/static/js/2.a196d07a.chunk.js"
   },
   {
-    "revision": "e3d6a4d4e6da1ee492e50f50071cf5dc",
+    "revision": "c07cf43721a14122644078d8cf87f354",
     "url": "/autochess-tracker/index.html"
   }
 ];
