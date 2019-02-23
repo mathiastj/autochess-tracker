@@ -5,11 +5,11 @@ import MmrChart from "./components/MmrChart";
 
 class App extends Component {
   // default State object
-  state = {};
+  state = { player: "76561197978098862" };
 
   async componentDidMount() {
     const res = await axios.get(
-      "https://warm-taiga-16419.herokuapp.com/db-stats"
+      `https://warm-taiga-16419.herokuapp.com/db-stats/${this.state.player}`
     );
 
     this.setState({ stats: res.data.results });
