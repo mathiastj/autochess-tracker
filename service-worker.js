@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/autochess-tracker/precache-manifest.14a655ca6d8330338ae8aecd15989070.js"
+  "/autochess-tracker/precache-manifest.4174c0cd3fc9d9af41cec610cdf47e40.js"
 );
 
 workbox.clientsClaim();

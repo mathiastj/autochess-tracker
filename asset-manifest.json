@@ -1,13 +1,15 @@
 {
-  "main.css": "/autochess-tracker/static/css/main.5d3c1d90.chunk.css",
-  "main.js": "/autochess-tracker/static/js/main.66c59f85.chunk.js",
-  "main.js.map": "/autochess-tracker/static/js/main.66c59f85.chunk.js.map",
+  "main.css": "/autochess-tracker/static/css/main.47701936.chunk.css",
+  "main.js": "/autochess-tracker/static/js/main.bfbc3868.chunk.js",
+  "main.js.map": "/autochess-tracker/static/js/main.bfbc3868.chunk.js.map",
   "runtime~main.js": "/autochess-tracker/static/js/runtime~main.e8ee5bcb.js",
   "runtime~main.js.map": "/autochess-tracker/static/js/runtime~main.e8ee5bcb.js.map",
-  "static/js/2.a196d07a.chunk.js": "/autochess-tracker/static/js/2.a196d07a.chunk.js",
-  "static/js/2.a196d07a.chunk.js.map": "/autochess-tracker/static/js/2.a196d07a.chunk.js.map",
+  "static/css/2.6a0d283a.chunk.css": "/autochess-tracker/static/css/2.6a0d283a.chunk.css",
+  "static/js/2.3210eac2.chunk.js": "/autochess-tracker/static/js/2.3210eac2.chunk.js",
+  "static/js/2.3210eac2.chunk.js.map": "/autochess-tracker/static/js/2.3210eac2.chunk.js.map",
   "index.html": "/autochess-tracker/index.html",
-  "precache-manifest.14a655ca6d8330338ae8aecd15989070.js": "/autochess-tracker/precache-manifest.14a655ca6d8330338ae8aecd15989070.js",
+  "precache-manifest.4174c0cd3fc9d9af41cec610cdf47e40.js": "/autochess-tracker/precache-manifest.4174c0cd3fc9d9af41cec610cdf47e40.js",
   "service-worker.js": "/autochess-tracker/service-worker.js",
-  "static/css/main.5d3c1d90.chunk.css.map": "/autochess-tracker/static/css/main.5d3c1d90.chunk.css.map"
+  "static/css/2.6a0d283a.chunk.css.map": "/autochess-tracker/static/css/2.6a0d283a.chunk.css.map",
+  "static/css/main.47701936.chunk.css.map": "/autochess-tracker/static/css/main.47701936.chunk.css.map"
 }
