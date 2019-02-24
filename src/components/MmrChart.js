@@ -47,7 +47,9 @@ const ranks = {
   35: "Rook 8",
   36: "Rook 9",
   37: "King",
-  38: "Queen"
+  38: "Queen",
+  39: "Queen",
+  40: "Queen"
 };
 
 const rankFormatter = mmrlevel => {
@@ -55,6 +57,13 @@ const rankFormatter = mmrlevel => {
 };
 
 class MmrChart extends Component {
+  fixData = dataPoints => {
+    for (const point of dataPoints) {
+      point.fetchedat = new Date(point.fetchedat).toDateString();
+    }
+    return dataPoints;
+  };
+
   render() {
     const { dataPoints } = this.props;
 
@@ -62,17 +71,10 @@ class MmrChart extends Component {
       return null;
     }
 
-    const fixData = dataPoints => {
-      for (const point of dataPoints) {
-        point.fetchedat = new Date(point.fetchedat).toDateString();
-      }
-      return dataPoints;
-    };
-
-    const data = fixData(dataPoints);
+    const data = this.fixData(dataPoints);
 
     return (
-      <ResponsiveContainer height={500} width={750} className="chart-container">
+      <ResponsiveContainer height={500} className="chart-container">
         <LineChart
           width={400}
           height={400}

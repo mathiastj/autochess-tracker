@@ -2,23 +2,37 @@ import React, { Component } from "react";
 import "./App.css";
 import axios from "axios";
 import MmrChart from "./components/MmrChart";
+import PlayerIdInputForm from "./components/PlayerIdInputForm";
+import PlayerInfo from "./components/PlayerInfo";
+
+const endpoint = "https://warm-taiga-16419.herokuapp.com/db-stats";
+const initialPlayerId = "76561197978098862";
 
 class App extends Component {
-  // default State object
-  state = { player: "76561197978098862" };
+  state = {};
+
+  async getStats(playerId) {
+    const res = await axios.get(`${endpoint}/${playerId}`);
+    this.setState({ stats: res.data.results, user: res.data.user });
+  }
 
   async componentDidMount() {
-    const res = await axios.get(
-      `https://warm-taiga-16419.herokuapp.com/db-stats/${this.state.player}`
-    );
+    await this.getStats(initialPlayerId);
+  }
 
-    this.setState({ stats: res.data.results });
+  async handlePlayerUpdate(playerId) {
+    await this.getStats(playerId);
   }
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
+          <PlayerIdInputForm
+            playerId={initialPlayerId}
+            onUpdate={playerId => this.handlePlayerUpdate(playerId)}
+          />
+          <PlayerInfo user={this.state.user} />
           <MmrChart dataPoints={this.state.stats} />
         </header>
       </div>
